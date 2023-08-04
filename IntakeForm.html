@@ -1,0 +1,65 @@
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <form action="https://metlifegcrm--sit.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="orgid" value="00D590000004clG">
+    <input type=hidden name="retURL" value="http://https://my.metlife.com/sites/GCRMPlayground/SitePages/Submit.aspx">
+
+    <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+    
+    Service Type:<select  id="00N59000000lNeI" name="00N59000000lNeI" title="Service Type"><option value="">--None--</option><option value="DevTechOps">DevTechOps</option>
+    <option value="Delivery">Delivery</option>
+    <option value="Enablement">Enablement</option>
+    <option value="Platform Support">Platform Support</option>
+    </select><br>
+    
+    Detailed Description:<textarea  id="00N0L0000062fv6UAA" name="00N0L0000062fv6UAA" rows="25" type="text" wrap="soft"></textarea><script>CKEDITOR.timestamp = '4.18.0.7';
+    var protocolAndHost = window.location.protocol + '//' + window.location.host;
+    
+    var editor = CKEDITOR.replace('00N0L0000062fv6UAA', {
+    removePlugins : 'elementspath,maximize,image,tabletools,liststyle,contextmenu,resize',
+    baseHref : protocolAndHost + '/ckeditor/ckeditor-4.x/rel/',
+    customConfig : '/ckeditor/ckeditor-4.x/rel/sfdc-config.js',
+    height : '425',
+    bodyId : '00N0L0000062fv6UAA_rta_body',
+    toolbar : 'SalesforceBasic',
+    sfdcLabels :{CkeLineHeight : { singleValue : 'Single', doubleValue : 'Double', title : 'Line Height', secondValue : '1.15', thirdValue : '1.5'}, CkeCodeBlock : { addCodeSample : 'Add a code sample'}, CkeQuickText : { title : 'Insert quick text'}, CkeMediaEmbed : { iframeMissing : 'Invalid &lt;iframe&gt; element. Please use valid code from the approved sites.', subtitle : 'Paste &amp;lt;iframe&amp;gt; code here:', description : 'Use &lt;iframe&gt; code from an approved video source.', title : 'Embed Multimedia Content', exampleTitle : 'Example:', example : '\n            \n                &lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.youtube.com/embed/KcOm0TNvKBA\&quot; frameborder=\&quot;0\&quot; allowfullscreen&gt;&lt;/iframe&gt;\n            \n        '}, CkeImageMenu : { uploadFile : ' Browse or Upload', uploadCms : 'Salesforce CMS', pasteUrl : 'Paste Image URL', uploadUrl : 'Web Image', uploadSFFile : 'Salesforce Files', title : 'Insert images into your message'}, CkeImagePaste : { CkeImagePasteWarning : 'Pasting an image is not working properly with Firefox, please use [Copy Image location] instead.'}, CkeImageDialog : { infoTab_desc_info : 'Enter a description of the image for visually impaired users', uploadTab_desc : 'Description', defaultImageDescription : 'User-added image', uploadTab_file_info : 'Maximum size 1 MB. Only PNG, GIF or JPEG', uploadTab_desc_info : 'Enter a description of the image for visually impaired users', imageUploadLimit_info : 'Max number of upload images exceeded', btn_insert_tooltip : 'Insert Image', httpUrlWarning : 'Are you sure you want to use an http URL? Using http image URLs may result in security warnings about insecure content. To avoid these warnings, use https image URLs instead.', title : 'Insert Image', error : 'Error:', uploadTab : 'Upload Image', wrongFileTypeError : 'You can insert only .gif .jpeg and .png files.', infoTab_url : 'URL', infoTab : 'Web Address', infoTab_url_info : 'Example: http://www.mysite.com/myimage.jpg', missingUrlError : 'You must enter a URL', uploadTab_file : 'Select Image', btn_update_tooltip : 'Update Image', infoTab_desc : 'Description', btn_insert : 'Insert', btn_update : 'Update', btn_upadte : 'Update', invalidUrlError : 'You can only use http:, https:, data:, //, /, or relative URL schemes.'}, sfdcSwitchToText : { sfdcSwitchToTextAlt : 'Use plain text'}, CkeSmartLink : { title : 'Insert a Smart Link', SmartLinkContextMenuEdit : 'Edit Smart Link'}},
+    contentsCss: ['/ckeditor/ckeditor-4.x/rel/contents.css', '/sCSS/58.0/sprites/1687156602000/Theme3/default/base/CKEditor.css', '/sCSS/58.0/sprites/1687156602000/Theme3/default/base/HtmlDetailElem.css'],
+    disableNativeSpellChecker : false,
+    language : 'en-US',
+    allowIframe : false,
+    isPardotOrg : false,
+    isCmsOnly : false,
+    sharedSpaces : { top : 'cke_topSpace', bottom : ' cke_bottomSpace' }
+    ,filebrowserImageUploadUrl : '/_ui/common/request/servlet/RtaImageUploadServlet?_CONFIRMATIONTOKEN=VmpFPSxNakF5TXkwd09DMHdOMVF4T0RveE5Ub3lNQzQwTmpKYSxsMUFTd2x3OFpHUVJyejBZX0pHTy10TDl6YlVLOVR3ZTYydkVJaE9RT3hjPSxOR0ZtTXpjMg=='
+    });
+    
+    editor.on('instanceReady', function( evt ) {
+        try {
+            var id = evt.editor.name;
+            CKiframe = document.getElementById('cke_' + id).querySelector('iframe');
+            meta = document.createElement('meta');
+            meta.setAttribute('name', 'referrer');
+            meta.setAttribute('content', 'no-referrer');
+            CKiframe.contentDocument.head.appendChild(meta);
+        } catch(e) {}
+    } );
+    
+    </script><br>
+    
+    Submitted By:<input  id="00N0L0000062fv8" maxlength="255" name="00N0L0000062fv8" size="20" type="text" /><br>
+    
+    Submitter Email:<input  id="00N0L000006XyQi" maxlength="80" name="00N0L000006XyQi" size="20" type="text" /><br>
+    
+    Line of Business:<input  id="00N0L0000062fv7" maxlength="200" name="00N0L0000062fv7" size="20" type="text" /><br>
+    
+    <label for="priority">Priority</label><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+    </select><br>
+    
+    <input type="hidden"  id="external" name="external" value="1" /><br>
+    
+    <input type="submit" name="submit">
+    
+    </form>
+    
